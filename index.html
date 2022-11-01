@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!--Background Container-->
+    <div class="flex bg-cyan-50 text-center justify-center min-h-screen">
+      <!--Card Container-->
+      <div
+        class="flex flex-col p-6 m-3 space-y-10 rounded-2xl bg-white shadow-xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16"
+      >
+        <!--Nav Container-->
+        <div
+          class="flex flex-col items-center justify-center spacing-y-3 md:flex-col md:space-x-8 md:mb-24 md:justify-end"
+        >
+          <!--Nav Items-->
+          <div class="group">
+            <a href="#">Vector</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="#">Illustration</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="#">Images</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="#">Icons</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+        <!--Input Container-->
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-0"
+        >
+          <div class="flex items-center justify-center border-b">
+            <input type="search" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
