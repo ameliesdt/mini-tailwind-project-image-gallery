@@ -9,14 +9,12 @@
   </head>
   <body>
     <!--Background Container-->
-    <div class="flex bg-cyan-50 text-center justify-center min-h-screen">
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
       <!--Card Container-->
-      <div
-        class="flex flex-col p-6 m-3 space-y-10 rounded-2xl bg-white shadow-xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16"
-      >
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
         <!--Nav Container-->
         <div
-          class="flex flex-col items-center justify-center spacing-y-3 md:flex-col md:space-x-8 md:mb-24 md:justify-end"
+          class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end"
         >
           <!--Nav Items-->
           <div class="group">
@@ -46,12 +44,42 @@
         </div>
         <!--Input Container-->
         <div
-          class="flex flex-col justify-between space-y-5 md:flex-row md:space-0"
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
         >
           <div class="flex items-center justify-center border-b">
-            <input type="search" placeholder="Search" />
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-80 ml-6 font-extralight"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="10" cy="10" r="7"></circle>
+                <line x1="21" y1="21" x2="15" y2="15"></line>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="10" cy="10" r="7"></circle>
+                <line x1="21" y1="21" x2="15" y2="15"></line>
+              </svg>
+            </button>
           </div>
+          <!--Upload Container-->
+          <button
+            class="py-3 px-14 text-lg text-white duration-200 border border-black bg-black font-normal rounded-md shadow:2xl hover:bg-white hover:text-black"
+          >
+            Upload
+          </button>
         </div>
+        <!--Grid Container-->
       </div>
     </div>
   </body>
